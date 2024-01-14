@@ -53,10 +53,10 @@ for filepath in filepaths:
     
     # Add total sum
     pdf.set_font(family="Times", size=10, style="B")
-    pdf.cell(w=35, h=8, txt=f"The total price is £{total_sum}")
+    pdf.cell(w=30, h=8, txt=f"The total price is £{total_sum}", ln=1)
     
     # Add companyt name and logo
-    pdf.set_font(family="Times", size=10, style="B", ln=1)
+    pdf.set_font(family="Times", size=10, style="B")
     
     pdf.cell(w=25, h=8, txt=f"TDB-Coding")
     pdf.image("TDB.png", w=4.5, h=5.5)
